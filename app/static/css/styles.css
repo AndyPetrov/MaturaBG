@@ -59,9 +59,18 @@ background: linear-gradient(45deg, #1a1a1a, #2c2c2c, #333333);
     100% { background-position: 0% 50%; }
 }
 
+i {
+    color: var(--primary-color);
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+footer {
+    border-radius: var(--radius-lg);
+    margin-top: 50px;
 }
 
 .container {
@@ -334,6 +343,26 @@ header {
     border-color: var(--primary-color);
 }
 
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.form-group select {
+    margin-left: auto;
+}
+
+.form-group select option {
+    background: var(--gray-200);
+    color: var(--gray-600);
+}
+
+.form-group select option:hover {
+    background: var(--gray-400);
+    color: var(--primary-light);;
+}
+
 /* Ad Section */
 .ad-section {
     padding: 40px 0;
@@ -423,6 +452,19 @@ footer {
 
 .footer-links a:hover {
     color: var(--primary-light);
+}
+
+.project-description {
+    font-size: 18px;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.project-description h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .copyright {
