@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar glass">
+                <a href="/" class="logo">MaturaBG</a>
+                <div class="nav-links">
+                    <a href="/">Начало</a>
+                    <a href="/subjects">Предмети</a>
+                    <a href="/contact">Контакти</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="quiz-setup" class="glass">
+        <h1>Създай своя тест</h1>
+        <div class="form-group">
+            <label for="subject">Предмет:</label>
+            <select id="subject">
+                <option value="BEL">БЕЛ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="grade">Клас:</label>
+            <select id="grade">
+                <option value="12">12</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="numQuestions">Брой въпроси:</label>
+            <select id="numQuestions">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+        <button onclick="startQuiz()" class="btn">Започни</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;" class="glass">
+        <div id="progress-bar" class="progress-bar"></div>
+        <div id="question-container">
+            <h2 id="question-text">Въпросът ще се появи тук</h2>
+            <ul class="answer-list" onclick="selectAnswer(event)">
+                <li>Отговор 1</li>
+                <li>Отговор 2</li>
+                <li>Отговор 3</li>
+                <li>Отговор 4</li>
+            </ul>
+        </div>
+        <div class="navigation-buttons">
+            <button class="nav-btn" onclick="previousQuestion()">Предишен въпрос</button>
+            <button class="nav-btn" onclick="nextQuestion()">Следващ въпрос</button>
+            <button class="nav-btn finish-btn" onclick="finishTest()">Завърши теста</button>
+        </div>
+    </div>
+
+    <div id="results-container" style="display: none;"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MaturaBG</h3>
+                    <p>Платформа за подготовка за Национално външно оценяване с автоматично генерирани тестове, базирани на реални изпити.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Връзки</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Начало</a></li>
+                        <li><a href="/subjects">Предмети</a></li>
+                        <li><a href="/contact">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Свържете се с нас</h3>
+                    <ul class="footer-links">
+                        <li><a href="/contact">Контакти</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 MaturaBG. Всички права запазени.
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+</body>
+</html>

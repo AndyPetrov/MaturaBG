@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar glass">
+                <a href="/" class="logo">MaturaBG</a>
+                <div class="nav-links">
+                    <a href="/">Начало</a>
+                    <a href="/subjects">Предмети</a>
+                    <a href="/contact">Контакти</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<section class="contact-section glass">
+    <div class="container">
+        <h1>Контакти</h1>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://reddit.com" target="_blank" class="social-link">
+                <i class="fab fa-reddit"></i> Reddit
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social-link">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+        <div class="email-contact">
+            <i class="fas fa-envelope"></i> <a href="mailto:matura-bg@gmail.com">matura-bg@gmail.com</a>
+        </div>
+        <div class="project-description">
+            <h2>Демо на проекта</h2>
+            <p>Това е демонстрационна версия на платформата MaturaBG, създадена за подготовка за Национално външно оценяване. Платформата предлага автоматично генерирани тестове, базирани на реални изпити, за да помогне на учениците да се подготвят ефективно.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>MaturaBG</h3>
+                <p>Платформа за подготовка за Национално външно оценяване с автоматично генерирани тестове, базирани на реални изпити.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Връзки</h3>
+                <ul class="footer-links">
+                    <li><a href="/">Начало</a></li>
+                    <li><a href="/subjects">Предмети</a></li>
+                    <li><a href="/contact">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Свържете се с нас</h3>
+                <ul class="footer-links">
+                    <li><a href="/contact">Контакти</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 MaturaBG. Всички права запазени.
+        </div>
+    </div>
+</footer>
+</body>
+</html>

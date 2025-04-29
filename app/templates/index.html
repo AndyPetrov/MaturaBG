@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaturaBG - Подготовка за НВО</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar glass">
+                <a href="/" class="logo">MaturaBG</a>
+                <div class="nav-links">
+                    <a href="/">Начало</a>
+                    <a href="/subjects">Предмети</a>
+                    <a href="/contact">Контакти</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero glass">
+        <div class="container hero-content">
+            <h1>Подготви се за НВО</h1>
+            <p>Автоматично генерирани тестове, базирани на реални изпити.</p>
+            <a href="/nvo/12" class="btn">Започни тест</a>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как работи?</h2>
+            <div class="steps">
+                <div class="step glass">
+                    <i class="fas fa-book"></i>
+                    <h3>Избираш предмет</h3>
+                    <p>Избери от списъка с наличните предмети, по които искаш да се упражняваш.</p>
+                </div>
+                <div class="step glass">
+                    <i class="fas fa-edit"></i>
+                    <h3>Правиш тест</h3>
+                    <p>Решаваш генериран тест с брой въпроси по твой избор.</p>
+                </div>
+                <div class="step glass">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Виждаш резултата</h3>
+                    <p>Получаваш моментална оценка и преглед на грешките, за да се подобриш.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MaturaBG</h3>
+                    <p>Платформа за подготовка за Национално външно оценяване с автоматично генерирани тестове, базирани на реални изпити.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Връзки</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Начало</a></li>
+                        <li><a href="/subjects">Предмети</a></li>
+                        <li><a href="/contact">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Свържете се с нас</h3>
+                    <ul class="footer-links">
+                        <li><a href="/contact">Контакти</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 MaturaBG. Всички права запазени.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
